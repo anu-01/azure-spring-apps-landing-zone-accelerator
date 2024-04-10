@@ -2,7 +2,7 @@
 resource "azurerm_spring_cloud_service" "sc_standard" {
   
   name                = local.spring_apps_name
-  resource_group_name = azurerm_resource_group.spoke_rg.name
+  resource_group_name = azurerm_resource_group.springapps_rg.name
   location            = var.location
     
   sku_name = "S0"
